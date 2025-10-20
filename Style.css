@@ -1,7 +1,6 @@
 nav {
-    display:grid;
-    grid-auto-columns: auto;
+    display:flex;
+    justify-content: space-around;
     background-color: grey;
     padding: 1rem 2rem;
-    max-height: 3em;
 }
