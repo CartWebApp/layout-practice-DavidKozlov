@@ -38,10 +38,52 @@ article > img {
     top: 625%;
     left: 10%;
 }
+
+
 .headline{
     display:flex;
     flex-flow: row wrap;
+    min-height: 40vh;
+    justify-content: center;
 }
 .headline > .small-column {
-    width: 30vw;
+    background-color: rgb(225, 225, 225);
+    width: 21vw;
+    margin: 0.6rem;
+    padding-bottom: 1em;
+}
+.headline > .big-column {
+    background-color: rgb(225, 225, 225);
+    width: 32.5vw;
+    margin: 0.6rem;
+    padding-bottom: 1em;
+}
+.headline > p{
+    padding:1em;
+}
+section > article > :is(h4,p,a) {
+    padding: 1rem;
+}
+[href~= "button"] {
+    background-color: aqua;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin: 1rem;
+}
+[href = "button green"] {
+    background-color: green;
+}
+[href = "detail button"] {
+    background-color: rgb(0, 161, 214);
+}
+[href  = "button red"] {
+    background-color: darkred;
+}
+[href = "read button"] {
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
 }
