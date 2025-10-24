@@ -45,23 +45,69 @@ article > img {
     }
     text-shadow: 1em 1em 1em;
 }
+.services{
+    background: url(layout-01-assets/img13.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    color: white;
+    & > p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
 .contact {
     background: url(layout-01-assets/img14.jpg) center/cover no-repeat;
     height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
+    padding-bottom: 20px;
     & > p {
         background: #fffa;
         display: block;
         justify-self: center;
         padding: 1rem;
         width: 55vw;
+        box-sizing: border-box;
     }
     & > div {
+        width: 55vw;
         display: grid;
+        grid-template: 20% 20% 20% 20% / repeat(10, 1fr);
+        gap: 10px;
+        & > :is(input, textarea) {
+            border-radius: 5px;
+            background-color: #fffa;
+        }
+        & > :is(button){
+            border-radius: 5px;
+            background-color: #222;
+            color: white;
+        }
+        & > :nth-child(1) {
+            grid-column: span 5;
+        }
+        & > :nth-child(2) {
+            grid-column: span 5;
+            grid-row-start: 2;
+        }
+        & > :nth-child(3) {
+            grid-column: span 5;
+            grid-row-start: 3;
+        }
+        & > textarea {
+            grid-row: span 3;
+            grid-column: span 5;
+        }
+        & > button {
+            grid-area: 4 / 8 / 6 / 6;
+        }
     }
 }
 
